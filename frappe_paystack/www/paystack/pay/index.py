@@ -14,7 +14,7 @@ def get_payment_request(**kwargs):
         paystack_gateway = frappe.get_doc("Payment Gateway", payment_request.payment_gateway)
         paystack = frappe.get_doc("Paystack Settings", paystack_gateway.gateway_controller)
         if(payment_request.payment_request_type=='Inward'):
-            ecommerce = frappe.get_single("E Commerce Settings")
+           # ecommerce = frappe.get_single("E Commerce Settings")
             return dict(
                 payment_request=payment_request,
                 name=payment_request.name,
