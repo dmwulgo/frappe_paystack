@@ -1,5 +1,5 @@
- {% extends "templates/web.html" %}
- {% block title %}{{ _("Make Payment") }}{% endblock %}
+{% extends "templates/web.html" %}
+{% block title %}{{ _("Make Payment") }}{% endblock %}
 
 
 {% block page_content %}
@@ -9,8 +9,8 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">*</th>
+                        <th scope="col">#</th>
+                        <th scope="col">*</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,8 +27,8 @@
                         <th scope="row">[% payment_data.request_date %]</th>
                     </tr>
                 </tbody>
-                </table>
-                <button class="btn btn-primary" id="paymentBTN" @submit.prevent="">Pay</button>
+            </table>
+            <button class="btn btn-primary" id="paymentBTN" @submit.prevent="">Pay</button>
         </div>
     </div>
 </div>

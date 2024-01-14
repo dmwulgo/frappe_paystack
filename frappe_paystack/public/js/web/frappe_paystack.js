@@ -14,7 +14,7 @@ frappe.ready(function(event){
                         let payBTN = $('#pay-for-order')[0];
                         let payBTNParent = payBTN.parentNode;
                         payBTN.remove();
-                        payBTNParent.innerHTML = `<button class="btn btn-success btn-sm" id="pay-for-order"> Paid </button>`;
+                        payBTNParent.innerHTML = `<button class="btn btn-success btn-sm" id="pay-for-order"> Paidx </button>`;
                     }
                 }
             });
