@@ -94,6 +94,9 @@ web_include_js = [
 doc_events = {
 	"Payment Request": {
 		"before_insert": "frappe_paystack.events.payment_request.before_insert"
+	},
+    "User": {
+		"after_insert": "frappe_paystack.events.create_customer_on_signup.after_insert"
 	}
 }
 
@@ -173,5 +176,5 @@ user_data_fields = [
 # 	"frappe_paystack.auth.validate"
 # ]
 
-required_apps = ["frappe", "erpnext", "payments", "ecommerce_integrations"]
+required_apps = ["frappe", "erpnext", "payments"]
 
